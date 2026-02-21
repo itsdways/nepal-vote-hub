@@ -12,21 +12,57 @@ body {
   color: #111827;
   line-height: 1.6;
 }
+
 /* NAVBAR */
 
 .navbar {
   position: sticky;
   top: 0;
-  background: rgba(255,255,255,0.9);
-  backdrop-filter: blur(8px);
+  background: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px 24px;
-  z-index: 100;
+  padding: 16px 32px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  z-index: 1000;
 }
 
 .logo {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #dc2626;
+  letter-spacing: 0.5px;
+}
+
+/* Remove default link styling */
+.nav-links a {
+  text-decoration: none;
+  color: #111827;
+  margin-left: 24px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #dc2626;
+}
+
+/* Mobile navbar */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    padding: 12px;
+  }
+
+  .nav-links {
+    margin-top: 8px;
+  }
+
+  .nav-links a {
+    margin: 0 10px;
+  }
+}.logo {
   font-weight: 700;
   color: #dc2626;
   font-size: 1.1rem;
