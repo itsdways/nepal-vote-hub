@@ -23,3 +23,21 @@ function goToContent() {
     behavior: 'smooth'
   });
 }
+
+// Scroll reveal for cards
+
+const cards = document.querySelectorAll('.card');
+
+const reveal = () => {
+  cards.forEach(card => {
+    const top = card.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    if (top < windowHeight - 100) {
+      card.classList.add('show');
+    }
+  });
+};
+
+window.addEventListener('scroll', reveal);
+window.addEventListener('load', reveal);
