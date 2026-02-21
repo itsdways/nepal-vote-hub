@@ -1,43 +1,41 @@
-// Simple poll counters
 let votesA = 0;
 let votesB = 0;
 
-// Handle voting
 function vote(party) {
-  if (party === 'A') {
-    votesA++;
-  } else if (party === 'B') {
-    votesB++;
-  }
+  if (party === 'A') votesA++;
+  if (party === 'B') votesB++;
 
-  // Update result text
-  const result = document.getElementById('pollResult');
-  result.textContent = `Party A: ${votesA} | Party B: ${votesB}`;
+  document.getElementById("pollResult").textContent =
+    `Party A: ${votesA} | Party B: ${votesB}`;
 }
 
-// Smooth scroll to content
 function goToContent() {
-  const section = document.getElementById('content');
-
-  section.scrollIntoView({
-    behavior: 'smooth'
-  });
+  document.getElementById("content")
+    .scrollIntoView({ behavior: "smooth" });
 }
 
-// Scroll reveal for cards
+function answerQuiz(answer) {
+  const result = document.getElementById("quizResult");
 
-const cards = document.querySelectorAll('.card');
+  if (answer === "yes") {
+    result.textContent = "🔥 You are an Active Voter!";
+  } else {
+    result.textContent = "🙂 You are a Casual Voter!";
+  }
+}
 
-const reveal = () => {
+const cards = document.querySelectorAll(".card");
+
+function revealCards() {
   cards.forEach(card => {
     const top = card.getBoundingClientRect().top;
-    const windowHeight = window.innerHeight;
+    const screen = window.innerHeight;
 
-    if (top < windowHeight - 100) {
-      card.classList.add('show');
+    if (top < screen - 80) {
+      card.classList.add("show");
     }
   });
-};
+}
 
-window.addEventListener('scroll', reveal);
-window.addEventListener('load', reveal);
+window.addEventListener("scroll", revealCards);
+window.addEventListener("load", revealCards);
