@@ -5,16 +5,12 @@
   <title>Nepal Vote Hub 🇳🇵</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
 <nav class="navbar">
   <div class="logo">
     🇳🇵 VoteHub
@@ -29,14 +25,15 @@
   </div>
 </nav>
 
-<!-- HERO -->
 <header class="hero">
   <h1>Nepal Vote Hub</h1>
   <p>Track trends. Predict winners. Join the youth voice.</p>
+
   <button onclick="goToContent()">Start Predicting 🔥</button>
+
+  <p class="live-count">🔥 1,234 people predicting right now</p>
 </header>
 
-<!-- MAIN CONTENT -->
 <main id="content" class="content">
 
   <div class="card">
@@ -48,7 +45,7 @@
 
   <div class="card">
     <h2>😂 Meme Zone</h2>
-    <img src="https://i.imgur.com/2DhmtJ4.jpg" alt="Meme">
+    <img src="https://i.imgur.com/2DhmtJ4.jpg">
   </div>
 
   <div class="card">
@@ -62,7 +59,7 @@
   </div>
 
   <div class="card">
-    <h2>🧠 Voter Personality Test</h2>
+    <h2>🧠 Voter Test</h2>
     <button onclick="answerQuiz('yes')">Yes</button>
     <button onclick="answerQuiz('no')">No</button>
     <p id="quizResult"></p>
