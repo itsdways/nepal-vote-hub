@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nepal Vote Hub 🇳🇵</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="hero">
+
+  <h1>🇳🇵 Nepal Vote Hub</h1>
+
+  <p>
+    Your voice. Your future.  
+    Know. Vote. Share.
+  </p>
+
+  <button onclick="goToContent()">
+    Explore Now
+  </button>
+
+</header>
+
+<!-- MAIN CONTENT -->
+<main id="content" class="content">
+
+  <!-- Poll Card -->
+  <div class="card">
+
+    <h2>📊 Live Poll</h2>
+
+    <button onclick="vote('A')">Party A</button>
+    <button onclick="vote('B')">Party B</button>
+
+    <p id="pollResult">Vote now</p>
+
+  </div>
+
+  <!-- Meme Card -->
+  <div class="card">
+
+    <h2>😂 Meme Zone</h2>
+
+    <img src="https://i.imgur.com/2DhmtJ4.jpg" alt="Meme">
+
+  </div>
+
+  <!-- News Card -->
+  <div class="card">
+
+    <h2>📰 Trending News</h2>
+
+    <p>Major political debate today 🔥</p>
+
+  </div>
+
+  <!-- Prediction Card -->
+  <div class="card">
+
+    <h2>🔮 Prediction</h2>
+
+    <p>Party A leading by 10%</p>
+
+  </div>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+
+  Made with ❤️ in Nepal
+
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
