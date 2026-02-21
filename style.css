@@ -227,6 +227,42 @@ footer {
   transform: translateY(0) scale(1);
 }
 
+/* LIVE BADGE */
+
+.live-badge {
+  background: #dc2626;
+  color: white;
+  font-size: 0.7rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  margin-left: 8px;
+  vertical-align: middle;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.4; }
+  100% { opacity: 1; }
+}
+
+/* CARD ANIMATION */
+
+.card {
+  opacity: 0;
+  transform: translateY(40px) scale(0.97);
+  transition: all 0.6s ease;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
 .card:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 20px 40px rgba(0,0,0,0.12);
