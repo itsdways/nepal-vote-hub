@@ -16,97 +16,64 @@
 
 <!-- NAVBAR -->
 <nav class="navbar">
-
   <div class="logo">
-  🇳🇵 VoteHub
-  <span class="live-badge">LIVE</span>
-</div>
+    🇳🇵 VoteHub
+    <span class="live-badge">LIVE</span>
+  </div>
+
   <div class="nav-links">
     <a href="#content">Poll</a>
     <a href="#content">Memes</a>
     <a href="#content">News</a>
     <a href="#content">Predict</a>
   </div>
-
 </nav>
 
 <!-- HERO -->
 <header class="hero">
-
-  <h1>
-    🇳🇵 Nepal Vote Hub
-    <span class="live-badge">LIVE</span>
-  </h1>
-
-  <p>
-    Track trends. Predict winners. Join the youth voice.
-  </p>
-
-  <button onclick="goToContent()">
-    Start Predicting 🔥
-  </button>
-
+  <h1>Nepal Vote Hub</h1>
+  <p>Track trends. Predict winners. Join the youth voice.</p>
+  <button onclick="goToContent()">Start Predicting 🔥</button>
 </header>
 
 <!-- MAIN CONTENT -->
 <main id="content" class="content">
 
-  <!-- Poll Card -->
   <div class="card">
     <h2>📊 Live Poll</h2>
-
     <button onclick="vote('A')">Party A</button>
     <button onclick="vote('B')">Party B</button>
-
     <p id="pollResult">Vote now</p>
   </div>
 
-  <!-- Meme Card -->
   <div class="card">
     <h2>😂 Meme Zone</h2>
-
     <img src="https://i.imgur.com/2DhmtJ4.jpg" alt="Meme">
   </div>
 
-  <!-- News Card -->
   <div class="card">
     <h2>📰 Trending News</h2>
-
     <p>Major political debate today 🔥</p>
   </div>
 
-  <!-- Prediction Card -->
   <div class="card">
     <h2>🔮 Prediction</h2>
-
     <p>Party A leading by 10%</p>
   </div>
 
-  <!-- Quiz Card -->
-  <div class="card quiz">
-
+  <div class="card">
     <h2>🧠 Voter Personality Test</h2>
-
-    <p id="quizQuestion">
-      Do you follow political news daily?
-    </p>
-
     <button onclick="answerQuiz('yes')">Yes</button>
     <button onclick="answerQuiz('no')">No</button>
-
     <p id="quizResult"></p>
-
   </div>
 
 </main>
 
-<!-- FOOTER -->
 <footer>
   Made with ❤️ in Nepal
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
-
 </body>
 </html>
