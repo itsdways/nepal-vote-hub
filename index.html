@@ -13,9 +13,14 @@
 </head>
 
 <body>
+
 <!-- NAVBAR -->
 <nav class="navbar">
-  <div class="logo">🇳🇵 VoteHub</div>
+
+  <div class="logo">
+    <span class="logo-badge">V</span>
+    VoteHub
+  </div>
 
   <div class="nav-links">
     <a href="#content">Poll</a>
@@ -23,19 +28,24 @@
     <a href="#content">News</a>
     <a href="#content">Predict</a>
   </div>
-</nav><!-- HEADER -->
+
+</nav>
+
+<!-- HERO -->
 <header class="hero">
 
   <h1>
-🇳🇵 Nepal Vote Hub
-<span class="live-badge">LIVE</span>
-</h1>
+    🇳🇵 Nepal Vote Hub
+    <span class="live-badge">LIVE</span>
+  </h1>
+
   <p>
-   🇳🇵 Track trends. Predict winners. Join the youth voice.
-   </p>
+    Track trends. Predict winners. Join the youth voice.
+  </p>
 
   <button onclick="goToContent()">
-    Start Predicting 🔥  </button>
+    Start Predicting 🔥
+  </button>
 
 </header>
 
@@ -44,69 +54,60 @@
 
   <!-- Poll Card -->
   <div class="card">
-
     <h2>📊 Live Poll</h2>
 
     <button onclick="vote('A')">Party A</button>
     <button onclick="vote('B')">Party B</button>
 
     <p id="pollResult">Vote now</p>
-
   </div>
 
   <!-- Meme Card -->
   <div class="card">
-
     <h2>😂 Meme Zone</h2>
 
     <img src="https://i.imgur.com/2DhmtJ4.jpg" alt="Meme">
-
   </div>
 
   <!-- News Card -->
   <div class="card">
-
     <h2>📰 Trending News</h2>
 
     <p>Major political debate today 🔥</p>
-
   </div>
 
   <!-- Prediction Card -->
   <div class="card">
-
     <h2>🔮 Prediction</h2>
 
     <p>Party A leading by 10%</p>
-
   </div>
 
-  <!-- QUIZ CARD -->
-<div class="card quiz">
+  <!-- Quiz Card -->
+  <div class="card quiz">
 
-  <h2>🧠 Voter Personality Test</h2>
+    <h2>🧠 Voter Personality Test</h2>
 
-  <p id="quizQuestion">
-    Do you follow political news daily?
-  </p>
+    <p id="quizQuestion">
+      Do you follow political news daily?
+    </p>
 
-  <button onclick="answerQuiz('yes')">Yes</button>
-  <button onclick="answerQuiz('no')">No</button>
+    <button onclick="answerQuiz('yes')">Yes</button>
+    <button onclick="answerQuiz('no')">No</button>
 
-  <p id="quizResult"></p>
+    <p id="quizResult"></p>
 
-</div>
+  </div>
 
 </main>
 
 <!-- FOOTER -->
 <footer>
-
   Made with ❤️ in Nepal
-
 </footer>
 
 <!-- JS -->
-     <script src="script.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
