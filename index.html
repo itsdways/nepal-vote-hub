@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Nepal Vote Hub 🇳🇵</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
@@ -16,7 +16,6 @@
 
 <!-- NAVBAR -->
 <nav class="navbar">
-
   <div class="logo">
     🇳🇵 VoteHub
     <span class="live-badge">LIVE</span>
@@ -28,7 +27,6 @@
     <a href="#content">News</a>
     <a href="#content">Predict</a>
   </div>
-
 </nav>
 
 <!-- HERO -->
@@ -43,92 +41,58 @@
   </button>
 
   <p class="live-count">
-    🔥 <span id="liveUsers">1234</span> people predicting right now
+    🔥 <span id="userCount">1234</span> people predicting now
   </p>
 
 </header>
 
-<!-- CONTENT -->
+<!-- MAIN -->
 <main id="content" class="content">
 
-  <!-- POLL -->
+  <!-- Poll -->
   <div class="card">
-
     <h2>📊 Live Poll</h2>
 
     <button onclick="vote('A')">Party A</button>
     <button onclick="vote('B')">Party B</button>
 
     <p id="pollResult">Vote now</p>
-
   </div>
 
-  <!-- MEME -->
+  <!-- Meme -->
   <div class="card">
-
     <h2>😂 Meme Zone</h2>
 
     <img src="https://i.imgur.com/2DhmtJ4.jpg" alt="Meme">
-
   </div>
 
-  <!-- NEWS -->
+  <!-- News -->
   <div class="card">
-
     <h2>📰 Trending News</h2>
 
     <p>Major political debate today 🔥</p>
-
   </div>
 
-  <!-- PREDICTION -->
+  <!-- Prediction -->
   <div class="card">
-
     <h2>🔮 Prediction</h2>
 
     <p>Party A leading by 10%</p>
-
   </div>
 
-  <!-- QUIZ -->
+  <!-- Quiz -->
   <div class="card quiz">
 
-    <h2>🧠 Voter Personality Test</h2>
+    <h2>🧠 Voter Test</h2>
 
     <p id="quizQuestion">
       Do you follow political news daily?
     </p>
 
-    <div id="quizOptions">
+    <button onclick="answerQuiz('yes')">Yes</button>
+    <button onclick="answerQuiz('no')">No</button>
 
-      <button onclick="answerQuiz('yes')">Yes</button>
-      <button onclick="answerQuiz('no')">No</button>
-
-    </div>
-
-    <div id="quizResultBox" style="display:none;">
-
-      <h3 id="quizTitle"></h3>
-
-      <p id="quizDesc"></p>
-
-      <div class="share-box">
-
-        <a id="shareWhatsapp" target="_blank">
-          <button>📲 WhatsApp</button>
-        </a>
-
-        <a id="shareFacebook" target="_blank">
-          <button>📘 Facebook</button>
-        </a>
-
-        <a id="shareTwitter" target="_blank">
-          <button>🐦 X</button>
-        </a>
-
-      </div>
-
-    </div>
+    <p id="quizResult"></p>
 
   </div>
 
